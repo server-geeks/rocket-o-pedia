@@ -15,7 +15,7 @@ We aim in making the most clear and pretty UI for this project.
   <a href="https://github.com/topics/javascript"><img alt="javascript" src="https://img.shields.io/badge/Javascript%20-%23E34F26.svg?&style=for-the-badge&logo=javascript&logoColor=white"/></a>
 </div>
 
-## HOW TO CONTRIBUTE ? 👷 
+<!-- ## HOW TO CONTRIBUTE ? 👷 
 
 **1.** Fork [this](https://github.com/server-geeks/rocket-o-pedia) repository.
 
@@ -77,7 +77,7 @@ git push -u origin <your_branch_name>
 **Congratulations!** Sit and relax till we review your PR, you've made your contribution to (https://github.com/server-geeks/rocket-o-pedia) project
 
 <br>
-
+ -->
 <br><h1 align="center">Project Maintainers ⚙</h1>
 <table align="center">
   <tbody><tr>
