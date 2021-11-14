@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://www.nasa.gov/sites/default/files/thumbnails/image/solarswingby.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+h1 {
+    font-size: 60px;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.coming {
+    color: black;
+    display: flex;
+    width: 35%;
+    flex-direction: column;
+    height: 600px;
+    align-items: center;
+    justify-content: center;
+}
+
+.backimg {
+    width: 100%;
+}

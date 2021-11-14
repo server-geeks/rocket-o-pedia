@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liftoff</title>
+    <link rel="stylesheet" href="./assests/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="whole">
+        <header class="head">
+            <div class="left-head">
+                <a href="./index.html"><img src="assests\3.svg" alt="Logo" class="head-logo"></a>
+                <video autoplay muted loop class="midback">
+                    <source src="assests\P1__TerrraIntera.mp4">
+                </video>
+            </div>
+            <div class="right-head">
+                <button class="animated-underline wt-rocket-head">Learn With Us</button>
+                <button class="animated-underline org-head">Organizations</button>
+                <button class="animated-underline up-launch-head">Upcoming Launches</button>
+                <button onclick="fun404()" class="animated-underline news-head">News</button>
+                <button class="animated-underline aboutus-head">About Us</button>
+            </div>
+        </header>
+        <!-- 
+        <img src="./assests/midback.gif" alt="" class="mid-bak"> -->
+
+
+        <div class="mid-bar">
+            <div class="quote">
+                <blockquote class="quoteContent"></blockquote>
+                <span class="quoteAuthor"></span>
+            </div>
+        </div>
+
+        <div class="rocket-info" id="rocket-info">
+            <div class="wht-rocket">
+                <div class="wht-img">
+                    <img src="assests\mid2bar.jpg" alt="" class="wht-div-img">
+                </div>
+                <div class="wht-info">
+                    <h3 class="wht-head">What is a Rocket??</h3>
+                    <p class="wht-div-info">
+                        WHAT IS A ROCKET?
+                        When most people think of a rocket, they think of a tall round vehicle that flies into space.
+                        But
+                        the word "rocket" can mean two different things. The word can describe a type of engine. The
+                        word
+                        rocket also is used to talk about a vehicle that uses a rocket engine.
+                        A rocket (originated from the Italian word Rochette) is a spacecraft, aircraft, vehicle, or
+                        projectile that obtains thrust from a rocket engine.
+                    </p>
+                    <button class="wht-rckt-km wht-is-rckt-km">Know More</button>
+                </div>
+            </div>
+
+            <div class="wht-container">
+                <div class="wht-rckt-sc">
+                    <img src="assests\wht-is-rckt-sc.jpg" alt="" class="wht-rckt-sc-img">
+
+                    <div class="wht-rckt-sc-info">
+                        <h4 class="wht-rckt-sc-head">What is Rocket Science ?? </h4>
+                        <p class="wht-div">
+                            Rocket Science is basically science behind how a rocket work. It include launching of a
+                            rocket,deploying load in the space. making off a rocket etc. Rocket science is all about
+                            using rocket propulsion to move anything from a firework to a manned or unmanned
+                            spaceship.<br>
+                        </p>
+                        <button class="wht-rckt-km wht-rckt-sc-km">Know More</button>
+                    </div>
+                </div>
+
+                <div class="wht-rckt-imp">
+                    <div class="wht-rckt-imp-div-img">
+                        <img src="assests\wht-impo.jpg" alt="" class="wht-rckt-imp-img">
+                    </div>
+                    <div class="wht-rckt-imp-info">
+                        <h4 class="wht-rckt-sc-head">What Role Rockets Play in Human Development ??</h4>
+                        <p class="wht-div">
+                            Rocket plays a significant roles in ours daily life like when we want to talk to some
+                            someone we
+                            use our cellphone through which we are able to communicate due satellites launched by
+                            rockets.Rockets helps us in launching scientific equipments to know more about space.<br>
+                        </p>
+                        <button class="wht-rckt-km why-rckt-imp">Know More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <span class="org-heading" id="organizations">ORGANIZATIONS</span>
+
+        <div class="categories">
+            <a style="text-decoration:none" href="./organisations/spacex.html">
+                <div class="container-org spacex">
+                    <div class="content-inner">
+                        <div class="content-front">
+                            <div class="cf-inner">
+                                <div class="bg-1"></div>
+                                <div class="overlay"></div>
+                                <div class="inner">
+                                    <h1>SpaceX</h1>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-back">
+                            <div class="cf-inner">
+                                <div class="inner">
+                                    <div class="dec-icon">
+                                        ORIGIN:
+                                        <img src="assests/us.svg" alt="" class="ft-logo">
+                                    </div>
+                                    <p>SpaceX designs, manufactures and launches the world's most advanced rockets and
+                                        spacecraft. The company was founded in 2002 by Elon Musk to revolutionize space
+                                        transportation, with the ultimate goal of making life multiplanetary. SpaceX has
+                                        gained worldwide attention for a series of historic milestones.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a style="text-decoration:none" href="./organisations/isro.html">
+                <div class="container-org isro">
+                    <div class="content-inner">
+                        <div class="content-front">
+                            <div class="cf-inner">
+                                <div class="bg-2"></div>
+                                <div class="overlay"></div>
+                                <div class="inner">
+                                    <h1>ISRO</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-back">
+                            <div class="cf-inner">
+                                <div class="inner">
+                                    <div class="dec-icon">
+                                        ORIGIN:
+                                        <img src="assests/in.svg" alt="" class="ft-logo">
+                                    </div>
+                                    <p>Indian Space Research Organisation, formed in 1969, superseded the erstwhile
+                                        INCOSPAR. Vikram Sarabhai, having identified the role and importance of space
+                                        technology in a Nation's development, provided ISRO the necessary direction to
+                                        function as an agent of development.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a style="text-decoration:none" href="./organisations/nasa.html">
+                <div class="container-org nasa">
+                    <div class="content-inner">
+                        <div class="content-front">
+                            <div class="cf-inner">
+                                <div class="bg-3"></div>
+                                <div class="overlay"></div>
+                                <div class="inner">
+                                    <h1>NASA</h1>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-back">
+                            <div class="cf-inner">
+                                <div class="inner">
+                                    <div class="dec-icon">
+                                        ORIGIN:
+                                        <img src="assests/us.svg" alt="" class="ft-logo">
+                                    </div>
+                                    <p>In the pursuit of its mission objectives in aeronautics and space exploration,
+                                        National Aeronautics and Space Administration (NASA) continues pushing the
+                                        boundaries of its own foundations. Often, new technologies are needed to either
+                                        enhance current capabilities or enable future ones.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a style="text-decoration:none" href="./organisations/jaxa.html">
+                <div class="container-org ">
+                    <div class="content-inner">
+                        <div class="content-front">
+                            <div class="cf-inner">
+                                <div class="bg-4"></div>
+                                <div class="overlay"></div>
+                                <div class="inner">
+                                    <h1>JAXA</h1>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-back">
+                            <div class="cf-inner">
+                                <div class="inner">
+                                    <div class="dec-icon">
+                                        ORIGIN:
+                                        <img src="assests/jp.svg" alt="" class="ft-logo">
+                                    </div>
+                                    <p>JAXA was formed on 1 October 2003. JAXA is responsible for research, technology
+                                        development and launch of satellites into orbit, and is involved in many more
+                                        advanced missions such as asteroid exploration and possible human exploration of
+                                        the Moon.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a style="text-decoration:none" href="./organisations/cnsa.html">
+                <div class="container-org">
+                    <div class="content-inner">
+                        <div class="content-front">
+                            <div class="cf-inner">
+                                <div class="bg-5"></div>
+                                <div class="overlay"></div>
+                                <div class="inner">
+                                    <h1>CNSA</h1>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-back">
+                            <div class="cf-inner">
+                                <div class="inner">
+                                    <div class="dec-icon">
+                                        ORIGIN:
+                                        <img src="assests/cn.svg" alt="" class="ft-logo">
+                                    </div>
+                                    <p>China National Space Administration (CNSA), Chinese government organization
+                                        founded in 1993 to manage national space activities. The organization is
+                                        composed of four departments: General Planning; System Engineering; Science,
+                                        Technology, and Quality Control; and Foreign Affairs.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a style="text-decoration:none" href="./organisations/blue.html">
+                <div class="container-org">
+                    <div class="content-inner">
+                        <div class="content-front">
+                            <div class="cf-inner">
+                                <div class="bg-6"></div>
+                                <div class="overlay"></div>
+                                <div class="inner">
+                                    <h1>BLUE ORIGIN</h1>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-back">
+                            <div class="cf-inner">
+                                <div class="inner">
+                                    <div class="dec-icon">
+                                        ORIGIN:
+                                        <img src="assests/us.svg" alt="" class="ft-logo">
+                                    </div>
+                                    <p>Blue Origin was founded by Jeff Bezos with the vision of enabling a future where
+                                        millions of people are living and working in space to benefit Earth. In order to
+                                        preserve Earth, Blue Origin believes that humanity will need to expand, explore,
+                                        find new energy and material resources, and move industries that stress Earth
+                                        into space.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a style="text-decoration:none" href="./Under_Development/404.html">
+                <div class="container-org">
+                    <div class="content-inner">
+                        <div class="content-front">
+                            <div class="cf-inner">
+                                <div class="bg-7"></div>
+                                <div class="overlay"></div>
+                                <div class="inner">
+                                    <h1>ROSCOSMOS</h1>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-back">
+                            <div class="cf-inner">
+                                <div class="inner">
+                                    <div class="dec-icon">
+                                        ORIGIN:
+                                        <img src="assests/ru.svg" alt="" class="ft-logo">
+                                    </div>
+                                    <p>Roscosmos used to be known as the Russian Federal Space Agency, which was formed
+                                        in 1992. The new corporation was formed from merging the agency and United
+                                        Rocket and Space Corporation, a joint-stock entity meant to bolster the space
+                                        sector. Russia's involvement in space, however, long predates these events.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a style="text-decoration:none" href="./Under_Development/404.html">
+                <div class="container-org">
+                    <div class="content-inner">
+                        <div class="content-front">
+                            <div class="cf-inner">
+                                <div class="bg-8"></div>
+                                <div class="overlay"></div>
+                                <div class="inner">
+                                    <h1>ESA</h1>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-back">
+                            <div class="cf-inner">
+                                <div class="inner">
+                                    <div class="dec-icon">
+                                        ORIGIN:
+                                        EUROPE
+                                    </div>
+                                    <p>The European Space Agency (ESA) is Europe’s gateway to space. Its mission is to
+                                        shape the development of Europe’s space capability and ensure that investment in
+                                        space continues to deliver benefits to the citizens of Europe and the world. ESA
+                                        is an international organisation with 22 Member States.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a style="text-decoration:none" href="./Under_Development/404.html">
+                <div class="container-org">
+                    <div class="content-inner">
+                        <div class="content-front">
+                            <div class="cf-inner">
+                                <div class="bg-9"></div>
+                                <div class="overlay"></div>
+                                <div class="inner">
+                                    <h1>BOEING</h1>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-back">
+                            <div class="cf-inner">
+                                <div class="inner">
+                                    <div class="dec-icon">
+                                        ORIGIN:
+                                        <img src="assests/us.svg" alt="" class="ft-logo">
+                                    </div>
+                                    <p>Boeing is the world's largest aerospace company and leading manufacturer of
+                                        commercial jetliners, defense, space and security systems, and service provider
+                                        of aftermarket support.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <div class="container-org rocket-lab">
+                <div class="content-inner">
+                    <div class="content-front">
+                        <div class="cf-inner">
+                            <div class="bg-10"></div>
+                            <div class="overlay"></div>
+                            <div class="inner">
+                                <h1>ROCKET LAB</h1>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-back">
+                        <div class="cf-inner">
+                            <div class="inner">
+                                <div class="dec-icon">
+                                    ORIGIN:
+                                    <img src="assests/nz.svg" alt="" class="ft-logo">
+                                </div>
+                                <p>Rocket lab is an end-to-end space company delivering reliable launch services,
+                                    spacecraft, satellite components, and on-orbit management.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- *******FOOTER******** -->
+
+        <footer id="footer" class="footer-1">
+            <div class="main-footer widgets-dark typo-light">
+                <div class="container-1">
+                    <div class="row">
+
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <div class="widget subscribe no-box">
+
+                                <div> <img src="assests\2.svg" alt="" class="ft-logo"></div>
+
+                                <!-- <p>This is project aimed to make rockets and rocket science easy for normal people
+                                                and children.
+                                                This is made by Server Geeks </p> -->
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <div class="widget no-box">
+                                <h5 class="widget-title">Quick Links<span></span></h5>
+                                <ul class="thumbnail-widget">
+                                    <li>
+                                        <div class="thumb-content"><a href="#.">Glossary</a></div>
+                                    </li>
+                                    <li>
+                                        <div class="thumb-content"><a href="#.">Organiztions</a></div>
+                                    </li>
+                                    <li>
+                                        <div class="thumb-content"><a href="#.">Learn with us</a></div>
+                                    </li>
+                                    <li>
+                                        <div class="thumb-content"><a href="#.">News</a></div>
+                                    </li>
+                                    <li>
+                                        <div class="thumb-content"><a href="#.">About</a></div>
+                                    </li>
+                                    <li>
+                                        <div class="thumb-content"><a href="#.">Credits</a></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <script src="./scripts/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
