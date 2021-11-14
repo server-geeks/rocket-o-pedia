@@ -2,7 +2,7 @@
 
 `"ROCKETS MADE EASY"`
 
-To access this project <a href="" target="_blank">click here</a>
+To access this project <a href="https://server-geeks.github.io/rocket-o-pedia/" target="_blank">click here</a>
 
 NOTE: This project is currently under development project. Initially we have started making Front-End using HTML & CSS. Later we are planning to add JavaScript, React and even link to some Database making it a Full-Stack Development Project. 
 
