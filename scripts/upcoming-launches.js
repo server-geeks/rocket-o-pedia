@@ -9,7 +9,59 @@ async function getResponse() {
 		}
 	);
   const data = await response.json();
-  console.log(data.results[0].mission.name);
+
+  console.log(data.results.length);
+
+  var upcomingDiv = document.querySelector(".upcoming");
+  for(var i=0; i < data.results.length; i++){
+    
+    var statusClass;
+    if(data.results[i].status.id === 1) {
+      //Green
+      statusClass = "confirmed";
+    } else if(data.results[i].status.id === 2) {
+      //Red
+      statusClass = "tbd";
+    } else {
+      //Yellow
+      statusClass = "unconfirmed";
+    }
+
+    var confirmDate = new Date(data.results[i].net);
+    var startDate = new Date(data.results[i].window_start);
+    var endDate = new Date(data.results[i].window_end);
+
+    startdate = startDate.toDateString();
+    enddate = endDate.toDateString();
+
+    upcomingDiv.innerHTML += `<div class="single-launch ${statusClass}"><div class="launchData-left">	
+      <div class="sno">
+        ${i+1}
+      </div>
+      <div class="inner-details">
+        <h2 class="launch-title">	    				
+        ${data.results[i].name}
+        </h2>
+        <ul>
+          <li class="first-li">
+            ${data.results[i].launch_service_provider.name}
+          </li>
+          <li>
+            ${data.results[i].pad.location.name}
+          </li>
+          <li>
+            ${confirmDate}
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="launchData-right">
+      <span id="time10"><!-- T-3 days 04:46:40 --></span>
+    <span>Window starts ${startdate}</span>
+    <span>Window ends ${enddate}</span>
+    </div></div>
+  `;
+  }
 }
 
 getResponse();
@@ -39,12 +91,12 @@ function setTime(countDownDate, myId){
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    document.getElementById(myId).innerHTML = "T- " + days + "d " + hours + "h "
+    // document.getElementById(myId).innerHTML = "T- " + days + "d " + hours + "h "
     + minutes + "m " + seconds + "s ";
 
     if (distance < 0) {
       clearInterval(x);
-      document.getElementById(myId).innerHTML = "EXPIRED";
+      // document.getElementById(myId).innerHTML = "EXPIRED";
     }
   }, 1000);
 }
