@@ -15,6 +15,13 @@ async function getResponse() {
 
   var upcomingDiv = document.querySelector(".upcoming");
   for(var i=0; i < data.results.length; i++){
+
+    var confirmDate = new Date(data.results[i].net);
+    var startDate = new Date(data.results[i].window_start);
+    var endDate = new Date(data.results[i].window_end);
+
+    startdate = startDate.toDateString();
+    enddate = endDate.toDateString();
     
     var statusClass;
     if(data.results[i].status.id === 1) {
@@ -23,17 +30,14 @@ async function getResponse() {
     } else if(data.results[i].status.id === 2) {
       //Red
       statusClass = "tbd";
+    } else if(data.results[i].status.id === 3) {
+      //Green
+      statusClass = "confirmed";
+      confirmDate = startdate = enddate = "Launch Successful";
     } else {
       //Yellow
       statusClass = "unconfirmed";
     }
-
-    var confirmDate = new Date(data.results[i].net);
-    var startDate = new Date(data.results[i].window_start);
-    var endDate = new Date(data.results[i].window_end);
-
-    startdate = startDate.toDateString();
-    enddate = endDate.toDateString();
 
     upcomingDiv.innerHTML += `<div class="single-launch ${statusClass}"><div class="launchData-left">	
       <div class="sno">
@@ -50,7 +54,7 @@ async function getResponse() {
           <li>
             ${data.results[i].pad.location.name}
           </li>
-          <li>
+          <li class='confirmDat'>
             ${confirmDate}
           </li>
         </ul>
